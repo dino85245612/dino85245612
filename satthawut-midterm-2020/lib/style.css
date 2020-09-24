@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+.nav-bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blue
+}
+div a:visited{
+    background-color: green;
+}
+
+div a:link{
+    background-color: red;
+}
+
+div a:hover{
+    background-color: pink;
+}
+
+.menu-bar1, .menu-bar2, .menu-bar3, .menu-bar4, .menu-bar5 {
+    float: left;
+}
+
+div a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+}
+
+img{
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quote1, .quote2{
+    padding: 10px;
+}
+
+h2{
+    color: brown;
+}
+
+h3{
+    color: hotpink;
+}
+
+@media screen and (max-width: 800px){
+    img{
+        width: 100px;
+    }
+
+    iframe{
+        width: 70%;
+        height: 0%;
+    }
+}
+
+th, td{
+    border:1px solid black;
+    padding: 10px;
+}
+
+table{
+    text-align: right;
+    border:1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr:nth-child(1){
+    text-align: center;
+    background-color: #55eecc;
+}
+
+tr:nth-child(2), :nth-child(3){
+    text-align: left;
+}
+
+tr:nth-child(3){
+    background-color: #cccccc;
+}
+
+tr:nth-child(even){
+    background-color: white;
+}
+
+.book-pic{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.item{
+    width: 200px;
+}
+
+.number{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+#color-number{
+    color: red;
+}
+
