@@ -7,7 +7,6 @@ function readInput(){
         let n = +prompt("Enter an integer(a negative integer to quit)");
     
         if(n < 0){
-            alert(nArray);
             break;
     
         }else if(n > 0){
@@ -17,18 +16,20 @@ function readInput(){
     return nArray;
 }
 
-function displayStats(list){
-/*
-TODO: use ternary operators (?)
-*/
+function displayStats(inputarray){
+
     let sum = 0
     for(let item of list){
+        console.log(sum);
+        console.log(item);
+        console.log(typeof(sum));
         sum += item
     }
+    let avg = sum/list.length;
+    let min = Math.min.apply(null, list);
+    let max = Math.max.apply(null, list);
 
-    console.log(sum)
-    console.log(Math.max.apply(null, list))
-    console.log(Math.min.apply(null, list))
+    let display = alert(`For the list ${list} the average is ${avg}, the minimum is ${min}, and the maximum is ${max}`);
 
-    return sum;
+    return display;
 }
