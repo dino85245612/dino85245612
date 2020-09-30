@@ -25,7 +25,7 @@ function displayStats(inputarray){
         console.log(typeof(sum));
         sum += item
     }
-    let avg = sum/list.length;
+    let avg = (sum/list.length).toFixed(2);
     let min = Math.min.apply(null, list);
     let max = Math.max.apply(null, list);
 
